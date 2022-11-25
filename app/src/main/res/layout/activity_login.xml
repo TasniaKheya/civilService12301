@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/ft"
+    tools:context=".Login_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="25sp">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/emailTil1"
+        android:layout_above="@+id/passwordTil1"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/emailEt1"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/passwordTil1"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/passwordEt1"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login12"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/passwordTil1"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        >
+
+    </Button>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_below="@+id/login12"
+        android:textColor="@color/black"
+        android:text="Forget Password? Recover"
+        android:id="@+id/recoverPass"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/no_accountTv"
+        android:text="No account? Register"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:layout_below="@id/login12"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</RelativeLayout>
