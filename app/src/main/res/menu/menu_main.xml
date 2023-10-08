@@ -10,12 +10,23 @@
 
 
     <item android:id="@+id/action_search"
-        android:icon="@drawable/ic_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
         app:showAsAction="always"
-        android:title="Logout"
-        app:actionViewClass="androidx.appcompat.widget.SearchView">
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+
+    <item android:id="@+id/action_add_post"
+        android:title="Add Post"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_add_white"/>
+
+
+    <item
+        android:id="@+id/action_create_group"
+        android:title="Create Group"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_create_group">
 
     </item>
-
-
 </menu>

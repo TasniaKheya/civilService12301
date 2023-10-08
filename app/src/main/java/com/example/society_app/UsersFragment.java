@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.core.view.MenuItemCompat;
 import androidx.fragment.app.Fragment;
@@ -77,15 +78,7 @@ public class UsersFragment extends Fragment {
 
     */
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        setHasOptionsMenu(true);
-        super.onCreate(savedInstanceState);
-       /* if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }*/
-    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -134,6 +127,44 @@ public class UsersFragment extends Fragment {
 
 
     }
+
+
+    private void searchUsers(String query) {
+        FirebaseUser fUser = FirebaseAuth.getInstance().getCurrentUser();
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
+
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                usersList.clear();
+
+                for(DataSnapshot ds : snapshot.getChildren())
+                {
+                    ModelUsers modelUsers = ds.getValue(ModelUsers.class);
+
+                    if(!modelUsers.getUid().equals(fUser.getUid()))
+                    {
+                        if(modelUsers.getName().toLowerCase().contains(query.toLowerCase()) )
+                            usersList.add(modelUsers);
+                        else if(modelUsers.getEmail().toLowerCase().contains(query.toLowerCase()))
+                            usersList.add(modelUsers);
+                    }
+
+                    adapterUsers = new AdapterUsers(getActivity(),usersList);
+                    adapterUsers.notifyDataSetChanged();
+                    recyclerView.setAdapter(adapterUsers);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+    }
+
     private  void checkUserStatus()
     {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -150,17 +181,16 @@ public class UsersFragment extends Fragment {
         }
     }
 
-
-    /*@Override
+    @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         setHasOptionsMenu(true);
         super.onCreate(savedInstanceState);
     }
-*/
+
     @Override
     public void onCreateOptionsMenu(Menu menu , MenuInflater inflater) {
         inflater.inflate(R.menu.menu_main,menu);
-
+        menu.findItem(R.id.action_add_post).setVisible(false);
         MenuItem item = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -194,41 +224,6 @@ public class UsersFragment extends Fragment {
         super.onCreateOptionsMenu(menu,inflater);
     }
 
-    private void searchUsers(String query) {
-        FirebaseUser fUser = FirebaseAuth.getInstance().getCurrentUser();
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
-
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                usersList.clear();
-
-                for(DataSnapshot ds : snapshot.getChildren())
-                {
-                    ModelUsers modelUsers = ds.getValue(ModelUsers.class);
-
-                    if(!modelUsers.getUid().equals(fUser.getUid()))
-                    {
-                        if(modelUsers.getName().toLowerCase().contains(query.toLowerCase()) )
-                        usersList.add(modelUsers);
-                        else if(modelUsers.getEmail().toLowerCase().contains(query.toLowerCase()))
-                            usersList.add(modelUsers);
-                    }
-
-                    adapterUsers = new AdapterUsers(getActivity(),usersList);
-                    adapterUsers.notifyDataSetChanged();
-                    recyclerView.setAdapter(adapterUsers);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-
-    }
 
 
     @Override
@@ -238,6 +233,10 @@ public class UsersFragment extends Fragment {
         {
             firebaseAuth.signOut();
             checkUserStatus();
+        }
+        else if(id == R.id.action_create_group)
+        {
+            startActivity(new Intent(getActivity(),GroupCreateActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }

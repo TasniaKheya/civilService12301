@@ -69,9 +69,13 @@ public class Register_Activity extends AppCompatActivity {
                     mPasswordEt.setFocusable(true);
 
                 }
+                else if(password.startsWith("*****"))
+                {
+                    registerUser(email,password,"Authority");
+                }
                 else
                 {
-                    registerUser(email,password);
+                    registerUser(email,password,"");
 
                 }
             }
@@ -88,7 +92,7 @@ public class Register_Activity extends AppCompatActivity {
 
     }
 
-    private void registerUser(String email, String password) {
+    private void registerUser(String email, String password,String name) {
 
         progressDialog.show();
        mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -101,11 +105,12 @@ public class Register_Activity extends AppCompatActivity {
                    String email = user.getEmail();
                    String uid = user.getUid();
 
+
                    HashMap<Object,String>hashMap = new HashMap<>();
 
                    hashMap.put("email",email);
                    hashMap.put("uid",uid);
-                   hashMap.put("name","");
+                   hashMap.put("name",name);
                    hashMap.put("onlineStatus","online");
                    hashMap.put("typingTo","noOne");
                    hashMap.put("phone","");

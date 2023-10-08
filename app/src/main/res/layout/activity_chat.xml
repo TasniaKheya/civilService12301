@@ -76,6 +76,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <ImageButton
+            android:layout_width="50dp"
+            android:id="@+id/attachButton"
+            android:src="@drawable/ic_image_black"
+            android:background="@null"
+            android:layout_height="50dp">
+
+        </ImageButton>
         <EditText
             android:id="@+id/messageEt"
             android:background="@null"

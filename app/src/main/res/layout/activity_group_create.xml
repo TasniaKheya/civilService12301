@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupCreateActivity">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/groupIconView"
+        android:src="@drawable/ic_group"
+        android:layout_height="100dp">
+
+    </com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+
+    <EditText
+        android:id="@+id/groupTitleEt"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/groupIconView"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Group Title"
+        android:layout_height="wrap_content">
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/groupDescriptionEt"
+        android:inputType="textMultiLine|textCapSentences"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/groupTitleEt"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Group Description"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/createGroupBtn"
+        android:src="@drawable/ic_done"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</RelativeLayout>

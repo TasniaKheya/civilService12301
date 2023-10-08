@@ -6,7 +6,7 @@
     android:padding="10dp"
     android:id="@+id/messageLayout"
     android:layout_height="wrap_content">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
@@ -25,6 +25,7 @@
             android:layout_weight="1"
             android:textSize="16sp"
             android:text="His Message"
+            android:visibility="gone"
             android:textColor="@color/black"
             android:padding="15dp"
             android:background="@drawable/bg_receiver"
@@ -33,7 +34,20 @@
             >
 
         </TextView>
-        
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/messageIv"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            android:src="@drawable/ic_image_black"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bg_receiver"
+            >
+
+        </ImageView>
+
         <TextView
             android:id="@+id/timeTv"
             android:text="02/03/2019  05.59PM"
@@ -45,7 +59,7 @@
         </TextView>
 
     </LinearLayout>
-    
+
     <TextView
         android:layout_width="match_parent"
         android:id="@+id/isSeenTv"
