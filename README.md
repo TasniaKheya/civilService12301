@@ -1,19 +1,3 @@
 # An Android App
-![Screenshot_20221228-024425_Society_app](https://github.com/user-attachments/assets/72e78bf7-4821-438a-9673-b583811a3bc6)
-![Screenshot_20221228-024354_Society_app](https://github.com/user-attachments/assets/d7db1b8d-5a82-44cc-9f4e-3ffa1b1c63f5)
-![Screenshot_20221228-024158_Society_app](https://github.com/user-attachments/assets/7faab4b3-dc9c-4283-b939-4709299131ec)
-![Screenshot_20221228-023956_Society_app](https://github.com/user-attachments/assets/1b04c36d-47bc-4bda-a6e6-36b487332ff9)
-![Screenshot_20221228-023945_Society_app](https://github.com/user-attachments/assets/78467e47-0569-4c42-96a9-b01b8f5d4647)
-![Screenshot_20221228-023934_Society_app](https://github.com/user-attachments/assets/5e279f32-7558-4159-8a2f-e534b709b61c)
-![Screenshot_20221228-023921_Society_app](https://github.com/user-attachments/assets/b7c8382f-633b-45ca-a4ee-5e8b0a7892a3)
-![Screenshot_20221228-023844_Society_app](https://github.com/user-attachments/assets/2fc011b3-c1c5-4808-810e-1742c27ab46a)
-![Screenshot_20221228-023753_Society_app](https://github.com/user-attachments/assets/66e06ea9-ab52-430f-b27f-258a2d60fb9b)
-![Screenshot_20221228-023707_Society_app](https://github.com/user-attachments/assets/4e16c180-e691-4052-a135-5b3c7b1cd126)
-![Screenshot_20221228-023555_Society_app](https://github.com/user-attachments/assets/d1a7f7eb-03d0-45db-9ae1-14889507652b)
-![Screenshot_20221228-023523_Society_app](https://github.com/user-attachments/assets/7310aaf2-6e62-4beb-a383-efa931a2a7ae)
-![Screenshot_20221228-023515_Society_app](https://github.com/user-attachments/assets/b72c9edf-1bbe-4452-af39-3fcf34573fce)
-![Screenshot_20221228-023459_Society_app](https://github.com/user-attachments/assets/23b15eee-19e3-416f-9090-a58a6f29dc8c)
-![Screenshot_20221228-023449_Society_app](https://github.com/user-attachments/assets/94085459-eac9-40d4-acd6-30a46daaaabf)
-![20221228_031450](https://github.com/user-attachments/assets/8cc6f13e-6017-42b4-99c8-82276692e3ad)
-![Screenshot_20221228-025837_Society_app](https://github.com/user-attachments/assets/828d991b-0841-4db0-9420-579255f7ceeb)
+
 
