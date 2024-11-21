@@ -1,5 +1,4 @@
 # An Android App
-
 ![Screenshot_20221228-024425_Society_app](https://github.com/user-attachments/assets/72e78bf7-4821-438a-9673-b583811a3bc6)
 ![Screenshot_20221228-024354_Society_app](https://github.com/user-attachments/assets/d7db1b8d-5a82-44cc-9f4e-3ffa1b1c63f5)
 ![Screenshot_20221228-024158_Society_app](https://github.com/user-attachments/assets/7faab4b3-dc9c-4283-b939-4709299131ec)
