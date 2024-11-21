@@ -1,12 +1,5 @@
 # An Android App
-![Screenshot_20221228-024425_Society_app](https://github.com/user-attachments/assets/2be12255-a7e6-4c07-90f4-0c35cf4e9c02)
-![Screenshot_20221228-024354_Society_app](https://github.com/user-attachments/assets/7eb44c91-7367-4672-951d-8e97c0272a7f)
-![Screenshot_20221228-024158_Society_app](https://github.com/user-attachments/assets/f3eed870-4de2-48fa-9c78-3b3f98383bcf)
-![Screenshot_20221228-023956_Society_app](https://github.com/user-attachments/assets/31a2a723-12f8-423f-9e27-ba35d455b377)
-![Screenshot_20221228-023945_Society_app](https://github.com/user-attachments/assets/ba10f2aa-489a-4713-ad42-5da670495fb1)
-![Screenshot_20221228-023934_Society_app](https://github.com/user-attachments/assets/b37ac8ef-2f75-4f8c-b9a0-024de1e873e5)
-![Screenshot_20221228-023921_Society_app](https://github.com/user-attachments/assets/71463b3c-3747-4440-9533-8358b706c6e8)
-![Screenshot_20221228-023844_Society_app](https://github.com/user-attachments/assets/40199adc-594c-4a24-91dc-a0959ac99d21)
+![Screenshot_20221228-024425_Society_app](https://github.com/user-attachments/assets/2be12255-a7e6-4c07-90f4-0c35cf4e9c02)![Screenshot_20221228-024354_Society_app](https://github.com/user-attachments/assets/7eb44c91-7367-4672-951d-8e97c0272a7f)![Screenshot_20221228-024158_Society_app](https://github.com/user-attachments/assets/f3eed870-4de2-48fa-9c78-3b3f98383bcf[Screenshot_20221228-023956_Society_app](https://github.com/user-attachments/assets/31a2a723-12f8-423f-9e27-ba35d455b377)![Screenshot_20221228-023945_Society_app](https://github.com/user-attachments/assets/ba10f2aa-489a-4713-ad42-5da670495fb1)![Screenshot_20221228-023934_Society_app](https://github.com/user-attachments/assets/b37ac8ef-2f75-4f8c-b9a0-024de1e873e5)![Screenshot_20221228-023921_Society_app](https://github.com/user-attachments/assets/71463b3c-3747-4440-9533-8358b706c6e8)![Screenshot_20221228-023844_Society_app](https://github.com/user-attachments/assets/40199adc-594c-4a24-91dc-a0959ac99d21)
 ![Screenshot_20221228-023753_Society_app](https://github.com/user-attachments/assets/1a1141aa-f58a-4f0c-abbb-de774a10c3ac)
 ![Screenshot_20221228-023707_Society_app](https://github.com/user-attachments/assets/bd950e42-76fe-4b9c-abdc-1e11c459eb9f)
 ![Screenshot_20221228-023555_Society_app](https://github.com/user-attachments/assets/baa1be9e-82fa-469f-a6b8-6bf3d2842bc1)
