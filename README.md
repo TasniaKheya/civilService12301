@@ -1,4 +1,4 @@
-# A Social Media Android App
+# A Social Media Android App for Civil Service
 <p align="center">
 <img width="200" src="https://github.com/TasniaKheya/civilService12301/blob/main/app/Screenshot_20221228-023449_Society_app.jpg" />
 <img width="200" src="https://github.com/TasniaKheya/civilService12301/blob/main/app/Screenshot_20221228-023459_Society_app.jpg" />
